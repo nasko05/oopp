@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="776.0" prefWidth="1300.0" styleClass="rootNode" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.OverviewController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" maxWidth="-Infinity" minWidth="10.0" percentWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="0.0" percentHeight="100.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TabPane fx:id="tabPane" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="650.0" styleClass="rootNode" tabClosingPolicy="UNAVAILABLE" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+   </children>
+</GridPane>

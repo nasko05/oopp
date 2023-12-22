@@ -1,0 +1,77 @@
+Button {
+    -fx-border-width: 2px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-border-color: black;
+    -fx-background-color: white;
+    -fx-cursor: hand;
+    -fx-background-insets: 0.5px;
+}
+.TaskListButton{
+    -fx-background-color: transparent;
+}
+.TaskListVBox {
+
+}
+
+.SelectTaskButton{
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+.TaskListTitle {
+    -fx-font-weight: 800;
+    -fx-font-size: 29px;
+    -fx-text-fill: black;
+}
+.TaskTitle {
+    -fx-font-weight: 600;
+    -fx-font-size: 25px;
+    -fx-text-fill: black;
+}
+
+.ProgressBarContainer {
+    -fx-alignment: center;
+    -fix-fill-width: true;
+}
+.TagBar {
+    -fx-border-width: 2;
+}
+.ProgressBar {
+
+    -fx-accent: green;
+    -fx-control-inner-background: rgba(255,255,255,1);
+    -fx-inner-background-insets: 0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 10;
+    -fx-background-color: transparent;
+}
+
+.TagBar {
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+    -fx-border-radius: 10;
+    -fx-background-color: transparent;
+}
+
+* {
+   -fx-main-bg-color: white;
+}
+
+Workspace, TabPane, .rootNode{
+    -fx-background-color: -fx-main-bg-color;
+}
+
+TabPane VBox {
+    -fx-background-color: #f4f4f4;
+}
+.tab-header-background {
+
+    -fx-border: 1px;
+    -fx-border-color: black;
+}
+TagView {
+    -fx-border-insets: 0px;
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+}

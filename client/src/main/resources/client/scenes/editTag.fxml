@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="275.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.EditTagController">
+   <children>
+      <Button layoutX="367.0" layoutY="220.0" mnemonicParsing="false" onAction="#save" text="Save" />
+      <Label layoutX="40.0" layoutY="29.0" text="Description" />
+      <TextArea fx:id="editTagDescription" layoutX="169.0" layoutY="29.0" prefHeight="82.0" prefWidth="220.0" promptText="Tag Description" />
+      <Label layoutX="39.0" layoutY="144.0" text="Backgroud Color" />
+      <ColorPicker fx:id="tagColorPicker" layoutX="169.0" layoutY="140.0" />
+      <Label layoutX="39.0" layoutY="198.0" text="Font Color" />
+      <ColorPicker fx:id="tagFontColorPicker" layoutX="169.0" layoutY="194.0" />
+   </children>
+</AnchorPane>

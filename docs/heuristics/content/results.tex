@@ -1,0 +1,116 @@
+\section{Results}
+
+\subsection{Filtering and evaluating the results}
+After all five evaluators were questioned, 36 potential problems were reported. Some reports were duplicates, since some people reported on the same problems. Therefore, duplicates had to eliminated. This job was greatly simplified by using the specific questioning format, described in section 2.3.
+
+Also, most of the reports were shortened and simplified, so that the list would be more concise and presentable.
+
+All results were evaluated using a impact-frequency metric - for each issue identified by the experts, a score 1-7 was assigned for the impact ($m_i$) and the expected frequency ($f_i$) of the problem. Also, some issues that were named by the evaluators, were identified as false-positives.
+
+After this, a score was calculated for every non false-positive problem. The score was calculated using the following formula:
+
+$$score_i = m_i + f_i$$, 
+
+where $m_i$ denotes the impact score and $f_i$ denotes the expected frequency score of the $i$th problem. The intention in using this metric is to evaluate the problems in such way, so that the problem with the highest score would be the most severe one.
+
+Then, all problems were sorted by their score in descending order, i.e., they were prioritized from most to least severe.
+
+\subsection{The final list}
+
+The compiled list of non false-positive problems, that was received from the users is as follows:
+\begin{enumerate}
+  
+  \item A button for closing the workspace is available, when such functionality should not be allowed.
+  \\ \emph{Score - 12. Impact - 7, frequency - 5.} \\
+  
+  \item It is unclear how password protection works - there are both the "Unlock" buttons, and lock/unlock icons, which is confusing.
+  \\ \emph{Score - 11. Impact - 7, frequency - 4.} \\
+
+  \item It is impossible to specify (or change) the name of a given board. 
+  \\ \emph{Score - 10. Impact - 5, frequency - 5.} \\
+
+\item When the workspace is selected from the board overview, the tab pane disappears.
+  \\ \emph{Score - 10. Impact - 6, frequency - 4.} \\
+  
+  \item Displaying completed subtasks in the overview scene is not user-friendly because it is implemented using percentages instead of showing the number of completed tasks.
+  \\ \emph{Score - 9. Impact - 4, frequency - 5.} \\
+
+  \item It is impossible to return to the server connection screen from the workspace without closing the application.
+  \\ \emph{Score - 9. Impact - 7, frequency - 2.} \\
+  
+  \item The application does not allow the user to delete a board from the server.
+  \\ \emph{Score - 9. Impact - 7, frequency - 2.} \\
+  
+  \item The actual "Help" scene is not presented in the design, even though such functionality is implemented.
+  \\ \emph{Score - 8. Impact - 5, frequency - 3.} \\
+
+  \item When a user deletes a task list, no warning is given and it is immediately deleted. This can cause a user to delete a task list by accident. 
+  \\ \emph{Score - 8. Impact - 7, frequency - 1.} \\
+
+  \item In the board overview, it is unclear what the lock icon is supposed to do.
+  \\ \emph{Score - 7. Impact - 4, frequency - 3.} \\
+  
+  \item In the board overview scene, it is not obvious how to select a task and get to it's details. There is no explicit button for that, and it is not self-evident that the box of the task should be clicked.
+  \\ \emph{Score - 7. Impact - 6, frequency - 1.} \\
+
+  \item It is hard for the user to figure out how to unlock a board.
+  \\ \emph{Score - 7. Impact - 6, frequency - 1.} \\
+  
+   \item Different tags can have the same description and the same color. This could be confusing for the user.
+  \\ \emph{Score - 6. Impact - 3, frequency - 3.} \\
+    
+  \item In the overview if too many tags were created for a task, there would be visual problems.
+  \\ \emph{Score - 6. Impact - 5, frequency - 1.} \\
+  
+  \item In the task view scene, when creating new subtask the "Save" icon can be misidentified as a checkbox.
+  \\ \emph{Score - 6. Impact - 4, frequency - 2.} \\
+ 
+  \item The button that adds a new task list is relatively hard to find. It is not obvious where it is, even though it is the most important button in the board overview.
+  \\ \emph{Score - 5. Impact - 3, frequency - 2.} \\
+  
+  \item In the workspace, the "New" button can cause confusion, because it is next to the "Join" board button.
+  \\ \emph{Score - 5. Impact - 2, frequency - 3.} \\
+
+  \item It is not specified what happens, when a board is being unlocked and a wrong password is entered.
+  \\ \emph{Score - 5. Impact - 2, frequency - 3.} \\
+
+  \item The user cannot change the background color of the application.
+  \\ \emph{Score - 4. Impact - 2, frequency - 2.} \\
+
+ \item The "Join" and "New" buttons in the server connection scene have different sizes
+  \\ \emph{Score - 3. Impact - 1, frequency - 2.} \\
+
+
+  
+\end{enumerate}
+
+Also, the following problems were provided by the experts, but were identified as false-positives:
+
+\begin{enumerate}
+
+    \item The recently joined boards are not sorted by recency.
+    \item The user cannot add a tag to a task from the overview page.
+    \item Boards created by the user are not clearly separated from the recent boards.
+    \item In the workspace scene, the lock logo, which indicates whether or not a board is password-protected, is redundant.
+    \item In the board overview, a task has tags, which do not have text inside of them. That is inconvenient since each tag has to be looked up.
+    \item Task viewing and task editing scenes are not separated. The user does not have a separate scene in which they can simply view the tasks they want to achieve.
+
+\end{enumerate}
+
+So overall, $6/26$ problems that were identified by the experts were false-positives. So the accuracy of the experts is approximately $23%$.
+
+\subsection{Heuristics}
+Finally, it should be noted which usability heuristics were violated by which problems. Therefore, this list is provided:
+
+\begin{enumerate}
+  \item Visibility of system status: 4.
+  \item Match between system and the real world: 5.
+  \item User control and freedom: 3, 4, 6, 7, 19.
+  \item Consistency and standards: 1, 4, 8, 13.
+  \item Error prevention: 1.
+  \item Recognition rather than recall: 2, 10, 11, 12, 16, 17.
+  \item Flexibility and efficiency of use: 6.
+  \item Aesthetic and minimalist design: 14, 15.
+  \item Help users recognize, diagnose, and recover from errors: 9, 18.
+  \item Help and documentation: 8, 20.
+\end{enumerate}

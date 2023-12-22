@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" vgap="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="NEVER" maxWidth="1050.0" prefWidth="1050.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="230.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints percentHeight="10.0" vgrow="SOMETIMES" />
+    <RowConstraints percentHeight="90.0" prefHeight="650.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane alignment="CENTER" vgap="10.0" GridPane.columnIndex="1" GridPane.rowSpan="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="230.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="400.0" minHeight="10.0" prefHeight="300.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="addListButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="150.0" text="New task list" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+             <Button fx:id="colorButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="150.0" text="Color management" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+             <Button fx:id="deleteButton" maxWidth="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="150.0" text="Delete board" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+             <ScrollPane fx:id="tagList" hbarPolicy="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="210.0" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="15.0" right="15.0" />
+               </GridPane.margin></ScrollPane>
+             <Label fx:id="textCopiedLabel" text="Copied ID" textFill="GREEN" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <GridPane prefHeight="30.0" GridPane.halignment="CENTER" GridPane.rowIndex="9">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="42.0" minWidth="2.0" prefWidth="2.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="-Infinity" prefWidth="98.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.0" minWidth="-Infinity" prefWidth="87.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.0" minWidth="-Infinity" prefWidth="27.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="23.0" minWidth="4.0" prefWidth="21.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="copyUserID" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="28.0" prefWidth="23.0" style="-fx-background-color: transparent; -fx-border-width: 0;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@../client/scenes/icons/copy.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label fx:id="userID" alignment="CENTER" prefHeight="30.0" prefWidth="88.0" text="Label" GridPane.columnIndex="2" />
+                  <Label prefHeight="16.0" prefWidth="74.0" text="Board ID:" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <Label text="All tags:" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="lockedStatus" mnemonicParsing="false" style="-fx-background-color: white;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../client/scenes/icons/locked.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="addRemovePass" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: white;" text="Add password" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button fx:id="editPass" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Edit password" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+       <StackPane fx:id="titleStack" alignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+      <Label fx:id="boardName" alignment="CENTER" text="Board name" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+       <TextField fx:id="titleField" alignment="CENTER" visible="false" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+           <font>
+               <Font name="System Bold" size="28.0" />
+           </font>
+       </TextField>
+       </StackPane>
+       <ScrollPane fx:id="scrollPane" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="1040.0" GridPane.hgrow="NEVER" GridPane.rowIndex="1">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="1027.0" style="-fx-padding: 20;">
+               <padding>
+                  <Insets left="15.0" />
+               </padding></AnchorPane>
+         </content>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </ScrollPane>
+   </children>
+</GridPane>
